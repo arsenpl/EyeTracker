@@ -33,7 +33,6 @@ while True:
     frame_h, frame_w, _ = frame.shape
     if landmarks_points:
         points=[]
-
         landmarks = landmarks_points[0].landmark
         for id, landmark in enumerate(landmarks[474:478]):
             x = int(landmark.x * frame_w)
